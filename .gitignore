@@ -1,0 +1,14 @@
+/bin/*
+/obj/*
+/Properties/*
+/packages/*
+/.vs/*
+# Package Files #
+*.exe
+*.pdb
+/photos/*
+/scripts/*
+/fonts/*
+/Content/*
+
+/upload.bat
