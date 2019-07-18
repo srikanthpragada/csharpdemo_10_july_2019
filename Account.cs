@@ -12,6 +12,7 @@ namespace CsharpDemo
         private int acno;
         private string ahname;
         private double balance;
+        private static int minbal = 5000;
 
         // Constructor
         public Account(int ano, string name, double bal = 0)
