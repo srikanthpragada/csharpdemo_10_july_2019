@@ -9,9 +9,9 @@ namespace CsharpDemo
     class Course
     {
         // instance variables
-        private String title;
-        private int duration;
-        private int fee;
+        protected String title;
+        protected int duration;
+        protected int fee;
 
         // class variable
         private static int taxrate = 15;
@@ -46,7 +46,7 @@ namespace CsharpDemo
             }
         }
 
-        public void Print()
+        public virtual void Print()
         {
             Console.WriteLine(this.title);
             Console.WriteLine(this.duration);
@@ -77,8 +77,9 @@ namespace CsharpDemo
         {
             this.url = url;
         }
-
-        public void Print()
+        
+        // Override Print() of base class 
+        public override void Print()
         {
             base.Print();
             Console.WriteLine(this.url);
@@ -90,11 +91,12 @@ namespace CsharpDemo
     {
         static void Main()
         {
-            Course c1 = new Course("Angular",15,2000);
-            OnlineCourse c2 = new OnlineCourse
+            Course c = new Course("Angular",15,2000);
+            c.Print();  // Print() of Course 
+
+            c = new OnlineCourse
                                ("Python", "http://www.xyz.com/2343", 40, 5000);
-            
-            
+            c.Print(); // Print() of OnlineCourse
         }
     }
 }
