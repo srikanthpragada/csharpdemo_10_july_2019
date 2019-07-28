@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CsharpDemo.StringDemo</StartupObject>
+    <StartupObject>CsharpDemo.AverageMarks</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="ArrayDemo.cs" />
+    <Compile Include="AverageMarks.cs" />
     <Compile Include="EvenNumber.cs" />
     <Compile Include="Factors.cs" />
     <Compile Include="FunDemo.cs" />
