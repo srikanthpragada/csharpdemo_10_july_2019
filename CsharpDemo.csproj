@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CsharpDemo.AverageMarks</StartupObject>
+    <StartupObject>CsharpDemo.SortNames</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -54,12 +54,19 @@
     <Compile Include="FunDemo.cs" />
     <Compile Include="MyTime.cs" />
     <Compile Include="Numbers.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="PrintFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadNames.cs" />
+    <Compile Include="SortArray.cs" />
+    <Compile Include="SortCustomers.cs" />
     <Compile Include="SortMarks.cs" />
+    <Compile Include="SortNames.cs" />
     <Compile Include="StringDemo.cs" />
     <Compile Include="TestAccount.cs" />
     <Compile Include="TestCourse.cs" />
+    <Compile Include="WriteNames.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
