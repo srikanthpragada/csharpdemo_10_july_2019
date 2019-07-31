@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CsharpDemo.SortNames</StartupObject>
+    <StartupObject>CsharpDemo.SortedContacts</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,8 +61,10 @@
     <Compile Include="ReadNames.cs" />
     <Compile Include="SortArray.cs" />
     <Compile Include="SortCustomers.cs" />
+    <Compile Include="SortedContacts.cs" />
     <Compile Include="SortMarks.cs" />
     <Compile Include="SortNames.cs" />
+    <Compile Include="SortWords.cs" />
     <Compile Include="StringDemo.cs" />
     <Compile Include="TestAccount.cs" />
     <Compile Include="TestCourse.cs" />
