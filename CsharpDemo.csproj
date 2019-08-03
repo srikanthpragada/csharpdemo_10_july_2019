@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CsharpDemo.SortedContacts</StartupObject>
+    <StartupObject>CsharpDemo.DelegateDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,11 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="AdvDemo.cs" />
     <Compile Include="ArrayDemo.cs" />
     <Compile Include="AverageMarks.cs" />
+    <Compile Include="DelegateDemo.cs" />
     <Compile Include="EvenNumber.cs" />
+    <Compile Include="ExMethodsDemo.cs" />
     <Compile Include="Factors.cs" />
     <Compile Include="FunDemo.cs" />
+    <Compile Include="GenericsDemo.cs" />
     <Compile Include="MyTime.cs" />
     <Compile Include="Numbers.cs" />
     <Compile Include="Point.cs" />
