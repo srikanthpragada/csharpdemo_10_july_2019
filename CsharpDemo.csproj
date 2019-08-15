@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CsharpDemo.DelegateDemo</StartupObject>
+    <StartupObject>CsharpDemo.QueryExpressionDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +50,7 @@
     <Compile Include="AdvDemo.cs" />
     <Compile Include="ArrayDemo.cs" />
     <Compile Include="AverageMarks.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="DelegateDemo.cs" />
     <Compile Include="EvenNumber.cs" />
     <Compile Include="ExMethodsDemo.cs" />
@@ -62,6 +63,8 @@
     <Compile Include="PrintFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryExpressionDemo.cs" />
+    <Compile Include="QueryOperatorsDemo.cs" />
     <Compile Include="ReadNames.cs" />
     <Compile Include="SortArray.cs" />
     <Compile Include="SortCustomers.cs" />
