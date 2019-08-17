@@ -19,10 +19,18 @@ namespace CsharpDemo.EF
             //var selcats = ctx.Categories
             //              .Where(c => c.Description.Length > 10);
 
-            var top3 = ctx.Categories.Take(3);
+            var cats = from c in ctx.Categories
+                       where c.Description.Length > 5
+                       orderby c.Description
+                       select new
+                       {
+                           Code = c.Code.ToUpper(),
+                           Name = c.Description.Substring(0, 5)
+                       };
 
-            foreach (Category c in top3)
-                Console.WriteLine(c.Description);
+
+            foreach (var c in cats)
+                Console.WriteLine(c.Name);
         }
     }
 }

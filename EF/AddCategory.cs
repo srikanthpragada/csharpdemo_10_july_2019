@@ -12,8 +12,10 @@ namespace CsharpDemo.EF
         {
             var ctx = new InventoryContext();
             var cat = new Category { Code = "c1", Description = "Category1" };
-            ctx.Categories.Add(cat);
-            ctx.SaveChanges();
+
+            ctx.Categories.Add(cat); // Added
+            ctx.SaveChanges();  // Insert 
+            ctx.Dispose(); // Detached 
         }
     }
 }
