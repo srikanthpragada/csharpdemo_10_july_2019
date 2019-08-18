@@ -11,10 +11,15 @@ namespace CsharpDemo.EFDM
         static void Main(string[] args)
         {
             var ctx = new msdbEntities();
-            var cats = ctx.categories;
+            ctx.Database.Log = Console.WriteLine;
+
+            var cats = ctx.categories.Include("products"); // Eager load
 
             foreach (var c in cats)
-                Console.WriteLine(c.catdesc);
+            {
+                Console.WriteLine(c.GetType().FullName); // Proxy name 
+                Console.WriteLine("{0}  - {1} ", c.catdesc, c.products.Count());
+            }
         }
     }
 }
